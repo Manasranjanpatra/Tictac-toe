@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(244, 242, 246);
+}
+.container{
+    height:90px;
+    background-color:rgba(0, 255, 76, 0.664);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+ul{
+    list-style: none;  
+    font-weight:10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+}
+li{
+    letter-spacing: 1px;
+}
+.contain{
+display:flex;
+justify-content: center;
+margin-top:30px;
+position: relative;
+
+}
+.sub1{
+    display:grid;
+    grid-template-columns:repeat(3,10vw);
+    grid-template-rows:repeat(3,10vw);
+    border:4px solid black;
+}
+.su2{
+    border:2px solid black;
+    font-size:80px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.su2:hover{
+    background-color: rgba(216, 67, 196, 0.24);
+    cursor:pointer;
+}
+.gameinfo{
+    padding:0px 40px; 
+    text-align: center;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.image img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+#reset{
+    padding:3px 8px;
+    margin:10px;
+    cursor:pointer;
+    font-size:20px;
+    background-color: rgb(238, 179, 136);
+    border-radius: 5px;
+    border: 2px solid black;
+}
+#reset:hover{
+    
+    background-color: rgb(183, 135, 228);
+}
+.info{
+    font-size: 1.35rem;
+    font-weight: 600;
+   
+}
+.line{
+    width:0;
+    /* height:100%; */
+    height:0.25rem;
+    position: absolute;
+    background-color: rgb(57, 17, 237);
+    /* transform: translate(5vw,15vw)rotate(0deg); */
+    /* left: 50%; */
+}
+h1{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+ @media screen and (max-width: 860px ) { 
+    .contain{
+        flex-wrap: wrap;
+    }
+    .gameinfo{
+        margin-top: 34px;
+    }
+    /* .contain{
+        grid-template-columns:repeat(3,20vw);
+        grid-template-rows:repeat(3,20vw);
+    } */
+} 
+@media(max-width:400px){
+    .su2{
+        
+        font-size:39px;
+     
+    }
+    .sub1{
+        display:grid;
+        grid-template-columns:repeat(3,10vw);
+        grid-template-rows:repeat(3,10vw);
+    }
+}
+
+
